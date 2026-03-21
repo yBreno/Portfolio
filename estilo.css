@@ -434,18 +434,17 @@ section.contato .interface{
 }
 
 .botao-enviar{
-    padding: 30px 480px;
+    width: 100%;
+    padding: 20px;
     font-size: 18px;
     border: 0;
     border-radius: 20px;
     font-weight: 600;
-    background-color: #8a2be2;
+    background: linear-gradient(90deg, #8a2be2, #a855f7);
     color: white;
     cursor: pointer;
     margin-top: 10px;
     font-family: var(--titulos);
-    justify-content: center;
-    align-items: center;
 }
 
 .botao-enviar:hover{
@@ -497,7 +496,6 @@ footer .copyright{
     font-size: 0.9rem;
     color: #aaa;
 }
-<<<<<<< HEAD
 
 header > .opcoesIniciais{
     display:flex;
@@ -505,5 +503,4 @@ header > .opcoesIniciais{
     justify-content:space-between;
     gap:40px;
 }
-=======
->>>>>>> 2387ec638c411e2502aa5cbdfa0607dc237bd5d4
+

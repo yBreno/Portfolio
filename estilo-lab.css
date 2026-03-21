@@ -1,0 +1,65 @@
+body{
+    background:#061127;
+    color:white;
+    font-family:"Inter",sans-serif;
+    margin:0;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:80px 20px;
+    text-align:center;
+}
+
+h1{
+    font-family:"Space Grotesk",sans-serif;
+    font-size:40px;
+}
+
+h1 span{
+    color:blueviolet;
+}
+
+p{
+    margin-top:20px;
+    line-height:1.6;
+    color:#cfd6ff;
+}
+
+.experimentos{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.experimentos a{
+    text-decoration:none;
+}
+
+button{
+    padding:15px 30px;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+    font-weight:600;
+    background:blueviolet;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#b58cff;
+}
+
+.voltar{
+    margin-top:60px;
+}
+
+.voltar a{
+    color:#9da8ff;
+    text-decoration:none;
+}

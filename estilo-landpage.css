@@ -1,0 +1,77 @@
+
+:root{
+    --titulos: "Space Grotesk", sans-serif;
+    --textos: "Inter", sans-serif;
+}
+
+body{
+    background-color: #061127;
+    height: 100vh;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.landpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 40px;
+    background-color: #0d2149;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 40px black;
+}
+
+h1, h2{
+    font-family: var(--titulos);
+}
+
+span{
+    color: blueviolet;
+}
+
+h3{
+    font-family: var(--textos);
+    font-size: small;
+}
+
+h4{
+    font-family: var(--textos);
+    font-size: x-small;
+    color: rgb(146, 146, 146);
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login button{
+    display: flex;
+    padding: 15px 70px;
+    font-size: 18px;
+    border: 1 5px ;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #8a2be2;
+    color: white;
+    border: 5px black;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: var(--titulos);
+    transition: 0.3s;
+    align-items:inherit;
+}
+
+.login button:hover{
+    background-color: #c8a9f1;
+    box-shadow: 0 0 12px #d8c7e7;
+    color: black;
+}

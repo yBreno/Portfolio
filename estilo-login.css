@@ -1,0 +1,97 @@
+
+:root{
+    --titulos: "Space Grotesk", sans-serif;
+    --textos: "Inter", sans-serif;
+}
+
+body{
+    background-color: #061127;
+    height: 100vh;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 40px;
+    background-color: #0d2149;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 40px black;
+}
+
+h1, h2{
+    font-family: var(--titulos);
+}
+
+h2 span{
+    color: blueviolet;
+}
+
+h3{
+    font-family: var(--textos);
+    font-size: small;
+    color: white;
+    margin: 0px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login button{
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: var(--titulos);
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.login button:hover{
+    background-color: #c8a9f1;
+    box-shadow: 0 0 12px #d8c7e7;
+    color: black;
+}
+
+input{
+    width: 70%;
+    padding: 12px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    background-color: #061127;
+    color: white;
+
+    font-family: var(--textos);
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus{
+    border: 2px solid blueviolet;
+    box-shadow: 0 0 8px blueviolet;
+}
+
+input::placeholder{
+    color: #9aa4c7;
+}

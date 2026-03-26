@@ -9,6 +9,12 @@ body{
     height: 100vh;
     color: whitesmoke;
     margin: 0;
+    background: 
+            linear-gradient(rgba(20, 0, 40, 0.7), rgba(20, 0, 40, 0.9)),
+            url("fotos/wall-roxo-steven.png");
+    
+        background-size: cover;
+        background-position: center;
 }
 
 .landpage{
@@ -51,6 +57,7 @@ h4{
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+    
 }
 
 .login button{
@@ -75,3 +82,4 @@ h4{
     box-shadow: 0 0 12px #d8c7e7;
     color: black;
 }
+

@@ -12,32 +12,45 @@
 <body>
     <section class="login">
         <div class="container">
-            <img src="" alt="">
-            
-            <h1>
-                Breno
-            </h1>
-            <h2>Developer & <span>Creator</span></h2>
-        
-            <form id="cadastro">
-                
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-                                
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha">
-                
-                <button type="submit">Criar Conta</button>
-                
-            </form>
-            
-           
+      
+          <h1>Breno</h1>
+          <h2>Developer & <span>Creator</span></h2>
+      
+          <form id="cadastro">
+      
+            <div class="input-group">
+              <input type="text" id="nome" placeholder=" ">
+              <label>Nome</label>
+            </div>
+      
+            <div class="input-group">
+              <input type="email" id="email" placeholder=" ">
+              <label>Email</label>
+            </div>
+      
+            <div class="input-group">
+              <input type="password" id="senha" placeholder=" ">
+              <label>Senha</label>
+            </div>
+      
+            <div class="input-group">
+              <input type="password" id="repetirSenha" placeholder=" ">
+              <label>Repetir Senha</label>
+            </div>
+      
+            <div class="input-group">
+              <input type="text" id="telefone" placeholder=" ">
+              <label>Telefone</label>
+            </div>
+      
+            <button type="submit">Criar Conta</button>
+      
+          </form>
+      
         </div>
-
-    </section>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script-registro.js"></script>
+
 </body>
 </html>

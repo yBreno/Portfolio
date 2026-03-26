@@ -1,3 +1,4 @@
+
 const formCadastro = document.getElementById("cadastro")
 
 formCadastro.addEventListener("submit", function(event){
@@ -7,22 +8,56 @@ formCadastro.addEventListener("submit", function(event){
     const nome = document.getElementById("nome").value
     const email = document.getElementById("email").value
     const senha = document.getElementById("senha").value
+    const repetirSenha = document.getElementById("repetirSenha").value
 
     if(nome === "" || email === "" || senha === ""){
-        alert("Preencha todos os campos")
+        Swal.fire({
+            title: "Erro!",
+            text: "Todos os botões devem ser preenchidos!",
+            icon: "error",
+            background: "#0f0f1a",
+            color: "#fff",
+            confirmButtonColor: "#7c3aed"
+        })
         return
     }
 
     if(senha.length < 6){
-        alert("A senha precisa ter pelo menos 6 caracteres")
+        Swal.fire({
+            title: "Erro!",
+            text: "A senha deve ter pelo menos 6 caracteres",
+            icon: "error",
+            background: "#0f0f1a",
+            color: "#fff",
+            confirmButtonColor: "#7c3aed"
+        })
         return
     }
 
+    if (senha != repetirSenha)
+    {
+        Swal.fire({
+            title: "Erro!",
+            text: "As senhas devem ser iguais!",
+            icon: "error",
+            background: "#0f0f1a",
+            color: "#fff",
+            confirmButtonColor: "#7c3aed"
+        })
+        return
+    }
+    
     localStorage.setItem("email", email)
     localStorage.setItem("senha", senha)
 
-    alert("Conta criada com sucesso!")
-
-    window.location.href = "login.html"
-
+    Swal.fire({
+        title: "Sucesso!",
+        text: "Conta criada com sucesso 🎉",
+        icon: "success",
+        background: "#0f0f1a",
+        color: "#fff",
+        confirmButtonColor: "#7c3aed"
+    }).then(() => {
+        window.location.href = "login.html"
+    })
 })

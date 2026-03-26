@@ -1,14 +1,21 @@
-
 :root{
-    --titulos: "Space Grotesk", sans-serif;
-    --textos: "Inter", sans-serif;
+    --bg: #061127;
+    --card: #0d2149;
+    --input: #08142e;
+    --primary: #8a2be2;
+    --text: #ffffff;
+    --sub: #9aa4c7;
 }
 
 body{
-    background-color: #061127;
-    height: 100vh;
-    color: whitesmoke;
     margin: 0;
+    font-family: "Inter", sans-serif;
+    background: 
+            linear-gradient(rgba(20, 0, 40, 0.7), rgba(20, 0, 40, 0.9)),
+            url("fotos/wall-roxo-mine.png");
+    
+        background-size: cover;
+        background-position: center;
 }
 
 .login{
@@ -19,79 +26,88 @@ body{
 }
 
 .container{
+    width: 340px;
     padding: 40px;
-    background-color: #0d2149;
-    border-radius: 15px;
+    background: var(--card);
+    border-radius: 20px;
+    box-shadow: 0 0 40px #000;
     text-align: center;
-    width: 250px;
-    box-shadow: 0 0 40px black;
 }
 
-h1, h2{
-    font-family: var(--titulos);
+h1{
+    margin-bottom: 5px;
+    color: white;
+}
+h2{
+    color: white;
 }
 
 h2 span{
-    color: blueviolet;
+    color: var(--primary);
 }
 
-h3{
-    font-family: var(--textos);
-    font-size: small;
-    color: white;
-    margin: 0px;
-}
-
-.botoes{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+/* INPUT GROUP */
+.input-group{
+    position: relative;
     margin-top: 20px;
 }
 
-.login button{
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 20px;
-    font-weight: 600;
-    background-color: #8a2be2;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-family: var(--titulos);
-    transition: 0.3s;
-    margin-top: 15px;
-}
-
-.login button:hover{
-    background-color: #c8a9f1;
-    box-shadow: 0 0 12px #d8c7e7;
-    color: black;
-}
-
-input{
-    width: 70%;
-    padding: 12px;
-    margin-top: 10px;
-
+.input-group input{
+    width: 90%;
+    padding: 14px;
     border-radius: 10px;
     border: 2px solid transparent;
-
-    background-color: #061127;
-    color: white;
-
-    font-family: var(--textos);
-    font-size: 14px;
-
+    background: var(--input);
+    color: var(--text);
     outline: none;
     transition: 0.3s;
 }
 
-input:focus{
-    border: 2px solid blueviolet;
-    box-shadow: 0 0 8px blueviolet;
+/* label flutuante */
+.input-group label{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--sub);
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s;
+    background: transparent;
 }
 
-input::placeholder{
-    color: #9aa4c7;
+/* animação quando digita */
+.input-group input:focus{
+    border-color: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label{
+    top: -8px;
+    left: 10px;
+    font-size: 11px;
+    color: var(--primary);
+    background: var(--card);
+    padding: 0 5px;
+}
+
+/* BOTÃO */
+button{
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #8a2be2, #a855f7);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #a855f7;
 }

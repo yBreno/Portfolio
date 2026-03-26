@@ -1,4 +1,4 @@
-# 💻 Portfólio - Breno (Brene)
+# 💻 Portfólio - Breno
 
 ![](readme/demonstracao.gif) 
 <!-- 🔼 Coloca aqui um print ou GIF do seu projeto -->

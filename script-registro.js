@@ -9,7 +9,19 @@ formCadastro.addEventListener("submit", function(event){
     const email = document.getElementById("email").value
     const senha = document.getElementById("senha").value
     const repetirSenha = document.getElementById("repetirSenha").value
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+    if(!regexEmail.test(email)){
+        Swal.fire({
+            title: "Email inválido!",
+            text: "Digite um email válido",
+            icon: "warning",
+            background: "#0f0f1a",
+            color: "#fff"
+        })
+        return 
+    }
+    
     if(nome === "" || email === "" || senha === ""){
         Swal.fire({
             title: "Erro!",
@@ -21,6 +33,8 @@ formCadastro.addEventListener("submit", function(event){
         })
         return
     }
+
+    
 
     if(senha.length < 6){
         Swal.fire({

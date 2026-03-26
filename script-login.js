@@ -8,7 +8,7 @@ loginForm.addEventListener("submit", function(event) {
     const senha = document.getElementById("senha").value
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-    // 🔥 1. vazio
+
     if(email.trim() === "" || senha.trim() === ""){
         Swal.fire({
             title: "Erro!",
@@ -18,10 +18,10 @@ loginForm.addEventListener("submit", function(event) {
             color: "#fff",
             confirmButtonColor: "#7c3aed"
         })
-        return // ⛔ PARA AQUI
+        return 
     }
 
-    // 🔥 2. email inválido (só roda se NÃO estiver vazio)
+    
     if(!regexEmail.test(email)){
         Swal.fire({
             title: "Email inválido!",
@@ -30,10 +30,10 @@ loginForm.addEventListener("submit", function(event) {
             background: "#0f0f1a",
             color: "#fff"
         })
-        return // ⛔ PARA AQUI
+        return 
     }
 
-    // 🔥 3. login
+    
     const emailSalvo = localStorage.getItem("email")
     const senhaSalva = localStorage.getItem("senha")
 

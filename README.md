@@ -11,7 +11,7 @@ Este projeto é uma versão interativa do meu currículo, desenvolvida com HTML,
 
 Foi criado com o objetivo de desenvolver minhas habilidades em front-end e apresentá-las de forma dinâmica, unindo design, organização e lógica de programação.
 
-A aplicação inclui validações de formulário e simulação de autenticação com localStorage.
+A aplicação inclui validações de formulário e simulação de autenticação com localStorage, alem de meus projetos pessoais completos e em andamento.
 
 ---
 
@@ -65,7 +65,7 @@ Este projeto me permitiu evoluir em:
 
 ## 🚀 Próximos passos
 
-- [ ] Melhorar responsividade 📱
+- [ ] Melhorar responsividade ja existente 📱
 - [ ] Adicionar mais interatividade
 - [ ] Conectar com backend real
 - [ ] Melhorar UI/UX
@@ -74,7 +74,7 @@ Este projeto me permitiu evoluir em:
 
 ## 👨‍💻 Autor
 
-Feito por **Breno (Brene)**  
+Feito por **Breno**  
 💜 Apaixonado por tecnologia, criatividade e desenvolvimento
 
 ---

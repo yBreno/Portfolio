@@ -44,10 +44,10 @@ A aplicação inclui validações de formulário e simulação de autenticação
 ## 🎨 Preview
 
 <!-- IDEIAS PRA VOCÊ -->
-- Print da tela inicial
-- Tela de login
-- Tela de cadastro
-- (OU MELHOR) um GIF navegando no site
+![](readme/index.png) 
+![](readme/lab.png) 
+![](readme/login.png) 
+![](readme/registro.png) 
 
 ---
 

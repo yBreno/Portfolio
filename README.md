@@ -1,6 +1,6 @@
 # 💻 Portfólio - Breno (Brene)
 
-![Preview do Projeto](readme/demonstracao.mp4) 
+![Preview do Projeto](.readme/demonstracao.mp4) 
 <!-- 🔼 Coloca aqui um print ou GIF do seu projeto -->
 
 ---

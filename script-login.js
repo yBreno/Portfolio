@@ -4,12 +4,12 @@ loginForm.addEventListener("submit", function(event) {
 
     event.preventDefault()
 
-    const email = document.getElementById("email").value
-    const senha = document.getElementById("senha").value
+    const email = document.getElementById("email").value.trim();
+    const senha = document.getElementById("senha").value.trim();
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 
-    if(email.trim() === "" || senha.trim() === ""){
+    if(email === "" || senha === ""){
         Swal.fire({
             title: "Erro!",
             text: "Todos os campos devem ser preenchidos!",
@@ -25,7 +25,35 @@ loginForm.addEventListener("submit", function(event) {
     if(!regexEmail.test(email)){
         Swal.fire({
             title: "Email inválido!",
-            text: "Digite um email válido",
+            text: "Digite um e-mail válido",
+            icon: "warning",
+            background: "#0f0f1a",
+            color: "#fff"
+        })
+        return 
+    }
+
+    let tabelaClientes = JSON.parse(localStorage.getItem("tabelaClientes")) || [];
+    
+    let clienteEncontrado = tabelaClientes.find(cliente => cliente.email === email);
+
+    if (!clienteEncontrado)
+    {
+        Swal.fire({
+            title: "Email inválido!",
+            text: "E-mail não encontrado!",
+            icon: "warning",
+            background: "#0f0f1a",
+            color: "#fff"
+        })
+        return 
+    }
+
+    if (clienteEncontrado.senha !== senha)
+    {
+        Swal.fire({
+            title: "Senha inválida!",
+            text: "Digite a senha correta.",
             icon: "warning",
             background: "#0f0f1a",
             color: "#fff"
@@ -34,29 +62,15 @@ loginForm.addEventListener("submit", function(event) {
     }
 
     
-    const emailSalvo = localStorage.getItem("email")
-    const senhaSalva = localStorage.getItem("senha")
-
-    if(email === emailSalvo && senha === senhaSalva){
-        Swal.fire({
-            title: "Sucesso!",
-            text: "Login realizado com sucesso!",
-            icon: "success",
-            background: "#0f0f1a",
-            color: "#fff",
-            confirmButtonColor: "#7c3aed"
-        }).then(() => {
-            window.location.href = "index.html"
-        })
-    } else {
-        Swal.fire({
-            title: "Erro!",
-            text: "Email ou senha incorretos",
-            icon: "error",
-            background: "#0f0f1a",
-            color: "#fff",
-            confirmButtonColor: "#7c3aed"
-        })
-    }
+    Swal.fire({
+        title: "Sucesso!",
+        text: "Login realizado com sucesso!",
+        icon: "success",
+        background: "#0f0f1a",
+        color: "#fff",
+        confirmButtonColor: "#7c3aed"
+    }).then(() => {
+        window.location.href = "index.html"
+    })
 
 })

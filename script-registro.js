@@ -5,10 +5,11 @@ formCadastro.addEventListener("submit", function(event){
     
     event.preventDefault()
 
-    const nome = document.getElementById("nome").value
-    const email = document.getElementById("email").value
-    const senha = document.getElementById("senha").value
-    const repetirSenha = document.getElementById("repetirSenha").value
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const senha = document.getElementById("senha").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const repetirSenha = document.getElementById("repetirSenha").value.trim();
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
     if(!regexEmail.test(email)){
@@ -22,7 +23,7 @@ formCadastro.addEventListener("submit", function(event){
         return 
     }
     
-    if(nome === "" || email === "" || senha === ""){
+    if(nome === "" || email === "" || senha === ""|| telefone === ""){
         Swal.fire({
             title: "Erro!",
             text: "Todos os botões devem ser preenchidos!",
@@ -60,9 +61,33 @@ formCadastro.addEventListener("submit", function(event){
         })
         return
     }
+
+    let cliente = {
+        nome: nome,
+        email: email,
+        senha: senha,
+        telefone: telefone
+    };
+
+    let tabelaClientes = JSON.parse(localStorage.getItem("tabelaClientes")) || [];
     
-    localStorage.setItem("email", email)
-    localStorage.setItem("senha", senha)
+    let emailExistente = tabelaClientes.find(c=>c.email === email);
+    if (emailExistente)
+    {
+        Swal.fire({
+            title: "Erro!",
+            text: "Email ja existente!",
+            icon: "error",
+            background: "#0f0f1a",
+            color: "#fff",
+            confirmButtonColor: "#7c3aed"
+        })
+        return
+    }
+
+    tabelaClientes.push(cliente);
+
+    localStorage.setItem("tabelaClientes", JSON.stringify(tabelaClientes));
 
     Swal.fire({
         title: "Sucesso!",

@@ -73,7 +73,6 @@ Este projeto me permitiu evoluir em:
 ## 👨‍💻 Autor
 
 Feito por **Breno**  
-💜 Apaixonado por tecnologia, criatividade e desenvolvimento
 
 ---
 

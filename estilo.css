@@ -221,6 +221,18 @@ section.projetos p {
     background-image:url(projetos/All\ Count.png);
     cursor: pointer;
 }
+.projetos-container .noctra{
+    background-image:url(projetos/Noctra.png);
+    cursor: pointer;
+}
+.projetos-container .kurly{
+    background-image:url(projetos/Kurly.png);
+    cursor: pointer;
+}
+.projetos-container .omy-newface{
+    background-image:url(projetos/Omy.png);
+    cursor: pointer;
+}
 
 .projetos-container .caixa-projetos .info-projeto{
     position: absolute;

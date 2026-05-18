@@ -1,6 +1,6 @@
 # 💻 Portfólio - Breno
 
-![](readme/demonstracao.gif) 
+![](assets/images/readme/demonstracao.gif) 
 
 ---
 
@@ -42,10 +42,10 @@ A aplicação inclui validações de formulário e simulação de autenticação
 
 ## 🎨 Preview
 
-![](readme/index.png) 
-![](readme/lab.png) 
-![](readme/login.png) 
-![](readme/registro.png) 
+![](assets/images/readme/index.png) 
+![](assets/images/readme/lab.png) 
+![](assets/images/readme/login.png) 
+![](assets/images/readme/registro.png) 
 
 ---
 

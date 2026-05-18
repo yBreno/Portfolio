@@ -7,16 +7,19 @@
     --sub: #9aa4c7;
 }
 
+
 body{
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    background: 
+        margin: 0;
+        height: 100vh;
+        font-family: "Inter", sans-serif;
+    
+        background: 
             linear-gradient(rgba(20, 0, 40, 0.7), rgba(20, 0, 40, 0.9)),
-            url("fotos/wall-roxo-mine.png");
+            url("../../images/fotos/wall-roxo-genshin.jpg");
     
         background-size: cover;
         background-position: center;
-}
+    }
 
 .login{
     display: flex;
@@ -34,11 +37,8 @@ body{
     text-align: center;
 }
 
-h1{
-    margin-bottom: 5px;
-    color: white;
-}
-h2{
+h1, h2{
+    font-family: "Space Grotesk", sans-serif;
     color: white;
 }
 
@@ -46,10 +46,15 @@ h2 span{
     color: var(--primary);
 }
 
+h5{
+    color: var(--text);
+    text-decoration: none;
+}
+
 /* INPUT GROUP */
 .input-group{
     position: relative;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .input-group input{
@@ -63,7 +68,7 @@ h2 span{
     transition: 0.3s;
 }
 
-/* label flutuante */
+/* LABEL FLUTUANTE */
 .input-group label{
     position: absolute;
     left: 12px;
@@ -73,10 +78,9 @@ h2 span{
     font-size: 14px;
     pointer-events: none;
     transition: 0.3s;
-    background: transparent;
 }
 
-/* animação quando digita */
+/* EFEITO */
 .input-group input:focus{
     border-color: var(--primary);
     box-shadow: 0 0 10px var(--primary);
@@ -95,7 +99,7 @@ h2 span{
 /* BOTÃO */
 button{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 14px;
     border: none;
     border-radius: 15px;

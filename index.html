@@ -1,245 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilo.css">
-        <link rel="stylesheet" href="responsiva.css">
-        <!-- MINHAS FONTES PARA TEXTOS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-        <!--  -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <title>
-            Breno's Portifolio
-        </title>
-    </head>
-    
-    <body>
-            <header id="cabecalhoInicial">
-                <div class="opcoesIniciais">
-                    <div class="icon">
-                        <a href="#"> <!-- Sempre href direciona -->
-                            <img src="fotos\logo.png" alt="Logo do Breno">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portf&oacute;lio de Breno Redusino, estudante de Ci&ecirc;ncia da Computa&ccedil;&atilde;o e desenvolvedor de projetos web, software e jogos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <title>Breno Redusino | Portf&oacute;lio</title>
+</head>
+
+<body>
+    <header class="site-header" id="topo">
+        <a class="brand" href="#inicial" aria-label="Ir para o in&iacute;cio">
+            <img src="assets/images/fotos/logo.png" alt="Logo do Breno">
+            <span>Breno</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Menu principal">
+            <a href="#inicial">In&iacute;cio</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Forma&ccedil;&atilde;o</a>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="pages/lab.html">Laborat&oacute;rio</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="theme-toggle" type="button" aria-label="Alternar tema">
+                <i class="bi bi-sun-fill theme-icon-light"></i>
+                <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+            </button>
+            <a class="button button-compact" href="#contato">Contato</a>
+            <button class="icon-button mobile-trigger" id="mobile-menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Menu mobile">
+            <a href="#inicial">In&iacute;cio</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Forma&ccedil;&atilde;o</a>
+            <a href="#sobre-mim">Sobre mim</a>
+            <a href="pages/lab.html">Laborat&oacute;rio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section-shell" id="inicial">
+            <div class="hero-backdrop" aria-hidden="true"></div>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">HTML • JavaScript • Tailwind • Python • C++ • Java</p>
+                    <h1>Tecnologia, lógica e personalidade.</h1>
+                    <p class="hero-name">Breno Redusino</p>
+                    <p class="hero-description">
+                        Estudante de Ciência da Computação criando projetos que unem tecnologia, design e identidade visual.
+                    <div class="hero-actions">
+                        <a class="button" href="#projetos">
+                            <i class="bi bi-stars"></i>
+                            Ver projetos
                         </a>
-                    </div>
-
-                    <nav class="menu-pc">
-                        <ul>
-                            <li><a href="#inicial">Inicio</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#formacao">Formação</a></li>
-                            <li><a href="#sobre-mim">Sobre mim</a></li>
-                            <li><a href="lab.html">Laboratorio</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="botao-contato">
-                        <a href="#contato">
-                            <button>Contato</button>
+                        <a class="button button-ghost" href="mailto:brenoredusino0@gmail.com">
+                            <i class="bi bi-envelope-at"></i>
+                            Falar comigo
                         </a>
                     </div>
                 </div>
-            </header>
 
-            <main>
-                
-                <section class="inicial" id="inicial">
-                    <div class="opcoesIniciais">
-                        <div class="fotoEsquerda">
-                            <img src="fotos\breno.jpg" alt="">
-                        </div>
-                        <div class="texto-inicial">
-                            <h1>Tecnologia e Criatividade <span>Breno Redusino</span></h1>
-                            <p>Estudante de Ciência da Computação apaixonado por criar soluções simples, acessíveis e bem construídas.</p>
-                            <div class="botao-contato">
-                                <a href="mailto:brenoredusino0@gmail.com">
-                                    <button>Entre em contato</button>
-                                </a>
-                            </div>
-                        </div>
+                <aside class="profile-panel" aria-label="Resumo de Breno">
+                    <div class="profile-photo-wrap">
+                        <img src="assets/images/projetos/breno.png" alt="Foto de Breno Redusino" class="profile-photo">
                     </div>
-                </section>
-
-                <section class="projetos" id="projetos">
-                    <section class="interface">
-                        <div class="texto-inicial">
-                            <h1 class="texto-inicial">Meus <span>Projetos</span></h1>
-                            <p>Cada projeto representa uma etapa da minha evolução como desenvolvedor, explorando ideias, tecnologias e novas formas de resolver problemas com acessibilidade.</p>
-
-                           <div class="projetos-container">
-                                <a href="https://gameboxd.online" target="_blank">
-                                    <article class="caixa-projetos gameboxd">
-                                        <div class="info-projeto">GameBoxd</div>                        
-                                    </article>
-                                </a>
-                                
-                                <a href="https://tactic-eye.onrender.com/" target="_blank">
-                                    <article class="caixa-projetos tactic-eye">
-                                        <div class="info-projeto">Tactic Eye</div>
-                                    </article>
-                                </a>
-                                
-                                <a href="https://www.youtube.com/shorts/6MlwP1mmOAY" target="_blank">
-                                    <article class="caixa-projetos all-count">
-                                        <div class="info-projeto">All Count</div>
-                                    </article>
-                                </a>
-                                
-                                <a href="https://ybreno.github.io/NOCTRA/" target="_blank">
-                                    <article class="caixa-projetos noctra">
-                                        <div class="info-projeto">Noctra</div>
-                                    </article>
-                                </a>
-                                
-                                <a href="https://kurly.onrender.com/" target="_blank">
-                                    <article class="caixa-projetos kurly">
-                                        <div class="info-projeto">KurlyAPP</div>
-                                    </article>
-                                </a>
-                                
-                                <a href="https://ybreno.github.io/Omy-newface/" target="_blank">
-                                    <article class="caixa-projetos omy-newface">
-                                        <div class="info-projeto">Omy Newface</div>
-                                    </article>
-                                </a>
-
-                            </div>
-                     
-                        </div>
-                    </section>
-                </section>
-
-                <section class="formacao" id="formacao">
-                    <div class="interface">
-                        <div class="texto-inicial">
-                            <h1 class="texto-inicial">Formação & <span>Competências</span></h1>
-                        </div>
-                        <article>
-                            <div class="caixa-formacao">
-                                <div class="habilidades">
-                                    <img src="fotos\BCC.png" alt="">
-                                    <h2>Ciência da <span>Computação</span></h2>
-                                </div>
-                                <p>Graduação em andamento com foco em desenvolvimento de software, algoritmos, banco de dados e criação de projetos práticos e acessiveis.</p>
-                            </div>
-                            
-                            <div class="caixa-formacao">
-                                <div class="habilidades">
-                                    <img src="fotos\Software.png" alt="">
-                                    <h2>Desenvolvimento de <span>Software</span></h2>
-                                </div>
-                                <p>Desenvolvimento de aplicações web e jogos utilizando Python, Godot, HTML, CSS e bancos de dados.</p>
-                            </div>
-                            
-                            <div class="caixa-formacao">
-                                <div class="habilidades">
-                                    <img src="fotos\Games.png" alt="">
-                                    <h2>Desenvolvimento de <span>Jogos</span></h2>
-                                </div>
-                                <p>Criação de jogos educacionais utilizando Godot, com foco em acessibilidade e aprendizado para projetos sociais.</p>
-                            </div>
-                            
-                            <div class="caixa-formacao">
-                                <div class="habilidades">
-                                    <img src="fotos\Web.png" alt="">
-                                    <h2>Projetos e  <span>Sistemas Web</span></h2>
-                                </div>
-                                <p>Desenvolvimento de projetos próprios como GameBoxd e Tactic Eye, aplicando banco de dados e automação com web scrapper.</p>
-                            </div>
-                            
-                            <div class="caixa-formacao">
-                                <div class="habilidades">
-                                    <img src="fotos\Ingles.png" alt="">
-                                    <h2>Língua <span>estrangeira</span></h2>
-                                </div>
-                                <p>Inglês nível C1 para leitura técnica e comunicação em ambientes de tecnologia.</p>
-                            </div>
-                            
-                            <div class="caixa-formacao">
-                                <div class="habilidades">
-                                    <img src="fotos\Pessoa.png" alt="">
-                                    <h2>Resiliência e <span>Aprendizado Contínuo</span></h2>
-                                </div>
-                                <p>Capacidade de adaptação a novos desafios, aprendizado constante e evolução contínua na área de tecnologia.</p>
-                            </div>
-                    
-
-                        </article>
+                    <div class="profile-meta">
+                        <span>Ci&ecirc;ncia da Computa&ccedil;&atilde;o</span>
+                        <strong>Web, software e jogos</strong>
                     </div>
-                </section>
+                </aside>
+            </div>
+        </section>
 
-                <section class="sobre-mim" id="sobre-mim">
-                    <div class="interface">
-                        <div class="texto-sobre-mim">
-                            <div class="texto-inicial">
-                                <h1 class="texto-inicial">
-                                    Sobre <span>mim</span>
-                                </h1>
-                                <p>Sou estudante de Ciência da Computação e gosto de transformar ideias em soluções simples, funcionais e bem construídas. Minha trajetória começou na área técnica e hoje une programação, criatividade e resolução de problemas no desenvolvimento de software e jogos.
-Tenho interesse em criar sistemas e experiências acessíveis, buscando sempre clareza, eficiência e evolução constante. Meus projetos refletem esse processo de aprendizado, explorando desenvolvimento web, banco de dados e jogos educacionais.</p>
-                                <div class="botao-sociais">
-                                    <a href="https://www.instagram.com/thatsmebreno/" target="_blank">
-                                        <button class="insta">
-                                            <img src="fotos\instagram.png" alt="">
-                                        
-                                        </button>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/breno-redusino-a4150b2b8/"target="_blank">
-                                        <button class="linedin">
-                                            <img src="fotos\linedin.png" alt="">
-                                            
-                                        </button>
-                                    </a>
-                                    <a href="https://github.com/yBreno"target="_blank">
-                                        <button class="github">
-                                            <img src="fotos\git.png" alt="">
-                                            
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="foto-sobre-mim">
-                                <img src="fotos\sobre_mim.jpg" alt="">
-                            </div>
-                        </div>
+        <section class="projects section-shell" id="projetos">
+            <div class="section-heading">
+                <p class="eyebrow">Projetos em destaque</p>
+                <h2>Meus <span>Projetos</span></h2>
+                <p>Cada projeto representa uma etapa da minha evolu&ccedil;&atilde;o como desenvolvedor, explorando ideias, tecnologias e novas formas de resolver problemas com acessibilidade.</p>
+            </div>
+
+            <div class="project-grid">
+                <a class="project-card project-card-large" href="https://gameboxd.online" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/projetos/GameBoxd.png" alt="Preview do projeto GameBoxd">
+                    <div class="project-overlay">
+                        <span class="project-tag">Web app</span>
+                        <h3>GameBoxd</h3>
+                        <p>Sistema focado em criação, alteração e exclusão de reviews de jogos.</p>
+                        <span class="project-link">Abrir projeto <i class="bi bi-arrow-up-right"></i></span>
                     </div>
-                </section>
+                </a>
 
-                <section class="contato" id="contato">
-                    <div class="interface">
-                        <div class="texto-contato">
-                            <h1 class="texto-inicial">Entre em <span>contato comigo</span></h1>
-                            <p><i class="bi bi-envelope-at"></i>@brenoredusino0@gmail.com</p>
-                            <p><i class="bi bi-whatsapp"></i>(14) 99749-3687</p>
-                        </div>
-
-                        <form action="#">
-                            <input type="text" placeholder="Seu nome">
-                            <a href="https://api.whatsapp.com/send?phone=5514997493687&text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20saber%20mais%20😀" target="_blank">
-                                <button type="button" class="botao-enviar">
-                                    Enviar WhatsApp
-                                </button>
-                            </a>
-                        </form>
-
+                <a class="project-card" href="https://tactic-eye.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/projetos/TaticEye.png" alt="Preview do projeto Tactic Eye">
+                    <div class="project-overlay">
+                        <span class="project-tag">Sistema</span>
+                        <h3>Tactic Eye</h3>
+                        <p>Organiza noticias globais e informações do cenario competitivo de Valorant.</p>
+                        <span class="project-link">Abrir projeto <i class="bi bi-arrow-up-right"></i></span>
                     </div>
-                </section>
+                </a>
 
-            </main>
-            <footer>
-                <p class="email-footer">
-                    <i class="bi bi-envelope-at"></i>
+                <a class="project-card" href="https://www.youtube.com/shorts/6MlwP1mmOAY" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/projetos/All Count.png" alt="Preview do projeto All Count">
+                    <div class="project-overlay">
+                        <span class="project-tag">Jogo Educativo</span>
+                        <h3>All Count</h3>
+                        <p>Jogo educativo para APAE de Marilia apresentado em video.</p>
+                        <span class="project-link">Ver v&iacute;deo <i class="bi bi-play-circle"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://ybreno.github.io/NOCTRA/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/projetos/Noctra.png" alt="Preview do projeto Noctra">
+                    <div class="project-overlay">
+                        <span class="project-tag">Interface</span>
+                        <h3>Noctra</h3>
+                        <p>Projeto publicado com foco em apresenta&ccedil;&atilde;o visual.</p>
+                        <span class="project-link">Abrir projeto <i class="bi bi-arrow-up-right"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://ybreno.github.io/Focus-Flow/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/projetos/FocusFlow.png" alt="Preview do projeto FocusFlow">
+                    <div class="project-overlay">
+                        <span class="project-tag">Interface</span>
+                        <h3>Focus Flow</h3>
+                        <p>Exeperimento de uso do Framework TailwindCSS.</p>
+                        <span class="project-link">Abrir projeto <i class="bi bi-arrow-up-right"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card" href="https://ybreno.github.io/Omy-newface/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/images/projetos/Omy.png" alt="Preview do projeto Omy Newface">
+                    <div class="project-overlay">
+                        <span class="project-tag">Interface</span>
+                        <h3>Omy Newface</h3>
+                        <p>Reformulação visual com foco em identidade visual.</p>
+                        <span class="project-link">Abrir projeto <i class="bi bi-arrow-up-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="skills section-shell" id="formacao">
+            <div class="section-heading">
+                <p class="eyebrow">Base t&eacute;cnica</p>
+                <h2>Forma&ccedil;&atilde;o & <span>Compet&ecirc;ncias</span></h2>
+            </div>
+
+            <div class="skill-grid">
+                <article class="skill-card">
+                    <img src="assets/images/fotos/BCC.png" alt="">
+                    <h3>Ci&ecirc;ncia da <span>Computa&ccedil;&atilde;o</span></h3>
+                    <p>Gradua&ccedil;&atilde;o em andamento com foco em desenvolvimento de software, algoritmos, banco de dados e cria&ccedil;&atilde;o de projetos pr&aacute;ticos e acess&iacute;veis.</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/images/fotos/Software.png" alt="">
+                    <h3>Desenvolvimento de <span>Software</span></h3>
+                    <p>Desenvolvimento de aplica&ccedil;&otilde;es web e jogos utilizando Python, Godot, HTML, CSS e bancos de dados.</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/images/fotos/Games.png" alt="">
+                    <h3>Desenvolvimento de <span>Jogos</span></h3>
+                    <p>Cria&ccedil;&atilde;o de jogos educacionais utilizando Godot, com foco em acessibilidade e aprendizado para projetos sociais.</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/images/fotos/Web.png" alt="">
+                    <h3>Projetos e <span>Sistemas Web</span></h3>
+                    <p>Desenvolvimento de projetos pr&oacute;prios como GameBoxd e Tactic Eye, aplicando banco de dados e automa&ccedil;&atilde;o com web scraper.</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/images/fotos/Ingles.png" alt="">
+                    <h3>L&iacute;ngua <span>Estrangeira</span></h3>
+                    <p>Ingl&ecirc;s n&iacute;vel C1 para leitura t&eacute;cnica e comunica&ccedil;&atilde;o em ambientes de tecnologia.</p>
+                </article>
+
+                <article class="skill-card">
+                    <img src="assets/images/fotos/Pessoa.png" alt="">
+                    <h3>Aprendizado <span>Cont&iacute;nuo</span></h3>
+                    <p>Capacidade de adapta&ccedil;&atilde;o a novos desafios, aprendizado constante e evolu&ccedil;&atilde;o cont&iacute;nua na &aacute;rea de tecnologia.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section-shell" id="sobre-mim">
+            <div class="about-copy">
+                <p class="eyebrow">Trajet&oacute;ria</p>
+                <h2>Sobre <span>mim</span></h2>
+                <p>
+                    Sou estudante de Ci&ecirc;ncia da Computa&ccedil;&atilde;o e gosto de transformar ideias em solu&ccedil;&otilde;es simples, funcionais e bem constru&iacute;das. Minha trajet&oacute;ria come&ccedil;ou na &aacute;rea t&eacute;cnica e hoje une programa&ccedil;&atilde;o, criatividade e resolu&ccedil;&atilde;o de problemas no desenvolvimento de software e jogos.
+                </p>
+                <p>
+                    Tenho interesse em criar sistemas e experi&ecirc;ncias acess&iacute;veis, buscando sempre clareza, efici&ecirc;ncia e evolu&ccedil;&atilde;o constante. Meus projetos refletem esse processo de aprendizado, explorando desenvolvimento web, banco de dados e jogos educacionais.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thatsmebreno/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Breno">
+                        <img id="insta_icon" src="assets/images/fotos/instagram.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ybreno/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Breno">
+                        <img id="linkedin_icon" src="assets/images/fotos/linedin.png" alt="">
+                    </a>
+                    <a href="https://github.com/yBreno" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Breno">
+                        <img id="github_icon" src="assets/images/fotos/git.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="assets/images/fotos/sobre_mim.png" alt="Breno em foto de perfil">
+            </div>
+        </section>
+
+        <section class="contact section-shell" id="contato">
+            <div class="contact-card">
+                <div>
+                    <p class="eyebrow">Contato</p>
+                    <h2>Vamos construir algo com cara de projeto real?</h2>
+                    <p>Me chama por email ou WhatsApp para conversar sobre ideias, estudos e projetos.</p>
+                </div>
+
+                <div class="contact-links">
                     <a href="mailto:brenoredusino0@gmail.com">
+                        <i class="bi bi-envelope-at"></i>
                         brenoredusino0@gmail.com
                     </a>
-                </p>
+                    <a href="https://api.whatsapp.com/send?phone=5514997493687" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                        (14) 99749-3687
+                    </a>
+                </div>
 
-                <p class="copyright">
-                    &copy; 2026 Breno Redusino. Todos os direitos reservados.
-                </p>
-            </footer>
+                <form class="contact-form" id="contact-form">
+                    <label for="contact-name">Seu nome</label>
+                    <div class="form-row">
+                        <input id="contact-name" name="nome" type="text" autocomplete="name" placeholder="Digite seu nome">
+                        <button class="button" type="submit">
+                            <i class="bi bi-whatsapp"></i>
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    </body>
+    <footer class="site-footer">
+        <a href="mailto:brenoredusino0@gmail.com">
+            <i class="bi bi-envelope-at"></i>
+            brenoredusino0@gmail.com
+        </a>
+        <p>&copy; 2026 Breno Redusino. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
 </html>

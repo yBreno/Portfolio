@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo-registro.css">
-    <title>Registro</title>
+    <link rel="stylesheet" href="../assets/css/pages/login.css">
+    <title>Login</title>
 </head>
 <body>
     <section class="login">
@@ -16,15 +16,10 @@
           <h1>Breno</h1>
           <h2>Developer & <span>Creator</span></h2>
       
-          <form id="cadastro">
-      
+          <form id="login">
+
             <div class="input-group">
-              <input type="text" id="nome" placeholder=" ">
-              <label>Nome</label>
-            </div>
-      
-            <div class="input-group">
-              <input type="email" id="email" placeholder=" ">
+              <input type="text" id="email" placeholder=" ">
               <label>Email</label>
             </div>
       
@@ -33,24 +28,17 @@
               <label>Senha</label>
             </div>
       
-            <div class="input-group">
-              <input type="password" id="repetirSenha" placeholder=" ">
-              <label>Repetir Senha</label>
-            </div>
-      
-            <div class="input-group">
-              <input type="text" id="telefone" placeholder=" ">
-              <label>Telefone</label>
-            </div>
-      
-            <button type="submit">Criar Conta</button>
+            <button type="submit">Entrar</button>
       
           </form>
+          <a href="registro.html">
+            <h5>Não tem uma conta? Clique aqui!</h5>
+          </a>
       
         </div>
       </section>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script-registro.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../assets/js/login.js"></script>
 </body>
 </html>

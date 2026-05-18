@@ -25,7 +25,7 @@ Além da apresentação dos meus projetos, o sistema também conta com páginas 
 ## 🌐 Acesse o Projeto
 
 🔗 **Deploy:**  
-https://ybreno.github.io/portifolio-html/
+https://github.com/yBreno/Portfolio
 
 ---
 

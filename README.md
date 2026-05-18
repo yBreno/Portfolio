@@ -1,4 +1,4 @@
-# 💜 Portfólio — Breno Redusino
+# Portfólio — Breno Redusino
 
 <p align="center">
   <img src="assets/images/readme/demonstracao.gif" alt="Demonstração do Projeto">

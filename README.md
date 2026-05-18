@@ -1,81 +1,164 @@
-# 💻 Portfólio - Breno
+# 💜 Portfólio V2 — Breno Redusino
 
-![](assets/images/readme/demonstracao.gif) 
+<p align="center">
+  <img src="assets/images/readme/demonstracao.gif" alt="Demonstração do Projeto">
+</p>
 
 ---
 
 ## ✨ Sobre o Projeto
 
-Este projeto é uma versão interativa do meu currículo, desenvolvida com HTML, CSS e JavaScript.
+Este projeto representa minha evolução como desenvolvedor front-end, unindo tecnologia, lógica e identidade visual em uma experiência moderna e interativa.
 
-Foi criado com o objetivo de desenvolver minhas habilidades em front-end e apresentá-las de forma dinâmica, unindo design, organização e lógica de programação.
+O portfólio foi totalmente reformulado na versão **V2** com foco em:
 
-A aplicação inclui validações de formulário e simulação de autenticação com localStorage, alem de meus projetos pessoais completos e em andamento.
+- Organização profissional de arquivos
+- Melhoria visual
+- Experiência do usuário
+- Responsividade
+- Identidade visual própria
+
+Além da apresentação dos meus projetos, o sistema também conta com páginas de autenticação utilizando JavaScript e LocalStorage para simulação de login e persistência de dados.
 
 ---
 
 ## 🌐 Acesse o Projeto
 
-🔗 https://ybreno.github.io/portifolio-html/
+🔗 **Deploy:**  
+https://ybreno.github.io/portifolio-html/
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
-- LocalStorage
+<div align="center">
 
----
+| Front-end | Recursos |
+|---|---|
+| HTML5 | Estrutura semântica |
+| CSS3 | Estilização moderna |
+| JavaScript | Interatividade |
+| LocalStorage | Persistência de dados |
+| Responsive Design | Responsividade |
+| Dark/Light Mode | Personalização visual |
 
-## ⚙️ Funcionalidades
-
-✅ Cadastro de usuários  
-✅ Validação de formulário  
-✅ Verificação de e-mail existente  
-✅ Sistema de login  
-✅ Persistência de dados com localStorage  
-✅ Simulação de usuário logado  
+</div>
 
 ---
 
-## 🎨 Preview
+# ⚙️ Funcionalidades
 
-![](assets/images/readme/index.png) 
-![](assets/images/readme/lab.png) 
-![](assets/images/readme/login.png) 
-![](assets/images/readme/registro.png) 
+- ✅ Interface moderna e responsiva  
+- ✅ Sistema Dark Mode / Light Mode  
+- ✅ Navegação dinâmica  
+- ✅ Showcase de projetos pessoais  
+- ✅ Sistema de login e cadastro  
+- ✅ Persistência de dados com LocalStorage  
+- ✅ Organização modular de arquivos  
+- ✅ Design focado em UI/UX e identidade visual  
 
 ---
 
-## 🧠 Aprendizados
+# 📁 Estrutura do Projeto
+
+```txt
+PORTIFOLIO-HTML/
+│
+├── assets/
+│   │
+│   ├── css/
+│   │   └── pages/
+│   │       ├── home.css
+│   │       ├── lab.css
+│   │       ├── landingpage.css
+│   │       ├── login.css
+│   │       ├── registro.css
+│   │       └── responsiva.css
+│   │
+│   ├── images/
+│   │   ├── fotos/
+│   │   ├── projetos/
+│   │   └── readme/
+│   │
+│   └── js/
+│       ├── login.js
+│       ├── main.js
+│       └── registro.js
+│
+├── pages/
+│   ├── lab.html
+│   ├── landingpage.html
+│   ├── login.html
+│   └── registro.html
+│
+├── index.html
+└── README.md
+```
+
+---
+
+# 🎨 Preview
+
+## 🏠 Página Inicial
+<img src="assets/images/readme/index.png" alt="Página Inicial">
+
+---
+
+## 🧪 Laboratório
+<img src="assets/images/readme/lab.png" alt="Laboratório">
+
+---
+
+## 🔐 Login
+<img src="assets/images/readme/login.png" alt="Tela de Login">
+
+---
+
+## 📝 Registro
+<img src="assets/images/readme/registro.png" alt="Tela de Registro">
+
+---
+
+# 🧠 Aprendizados
 
 Este projeto me permitiu evoluir em:
 
+- Estruturação de projetos front-end
+- Organização de arquivos
+- Responsividade
+- UI/UX Design
 - Manipulação do DOM
-- Validação de dados
-- Estruturação de lógica em JavaScript
-- Armazenamento de dados no navegador
-- Organização de código
+- Persistência de dados
+- Componentização visual
+- Identidade visual e branding
+- Organização semântica em HTML
+- Estrutura moderna de CSS e JavaScript
 
 ---
 
-## 🚀 Próximos passos
+# 🚀 Próximos Passos
 
-- [ ] Melhorar responsividade ja existente 📱
-- [ ] Adicionar mais interatividade
 - [ ] Conectar com backend real
-- [ ] Melhorar UI/UX
+- [ ] Criar integração com APIs
+- [ ] Melhorar acessibilidade
+- [ ] Adicionar animações mais avançadas
+- [ ] Evoluir partes do projeto para React
+- [ ] Criar CMS próprio para projetos
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
-Feito por **Breno**  
+## Breno Redusino
+
+<p align="center">
+  <a href="https://github.com/yBreno">GitHub</a> •
+  <a href="https://www.linkedin.com/in/ybreno/">LinkedIn</a> •
+  <a href="https://www.instagram.com/thatsmebreno/">Instagram</a>
+</p>
 
 ---
 
-## ⭐ Se curtir o projeto
+# ⭐ Se curtir o projeto
 
-Deixa uma ⭐ no repositório!
+Se esse projeto te inspirou ou ajudou de alguma forma, deixa uma ⭐ no repositório! 💜
